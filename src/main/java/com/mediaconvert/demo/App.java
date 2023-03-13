@@ -49,7 +49,7 @@ public class App
         MediaConvertClient mc = mediaConvertClient();
 
         String template_name = "my-template";// 在AWS Console 中定义的模板名称
-        String inputFile = "s3://mytest-hillday07/testvmaf/source/test-source-xxx.mp4";
+        String inputFile = "s3://xxx/testvmaf/source/test-source-xxx.mp4";
         CreateJobRequest createJobRequest = CreateJobRequest.builder()
         .jobTemplate(template_name)
         .role(jobRole)
